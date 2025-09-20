@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url(https://a.storyblok.com/f/191576/768x432/ba1ffaa6d8/christmas_backgrounds_cover_2x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+nav {
+    background-color: rgb(15, 180, 235);
+    color: rgb(17, 15, 15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 20px;
+
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.hero .btn {
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero .btn:hover {
+    background: #ffaa00;
+}
+section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: hsl(210, 29%, 3%);
+}
+.services {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    background: #c79393;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+ .card:hover {
+    transform: translateY(-10px);
+}
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #ffcc00;
+}
+/* Responsive */
+@media(max-width:768px){
+    nav ul {
+        flex-direction: column;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+    
